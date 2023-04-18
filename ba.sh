@@ -1,5 +1,5 @@
 WagePerHour=20
 FullDayHour=8
 
-        totalSalary=$(( WagePerHour * FullDayHour ))
+totalSalary=$(( WagePerHour * FullDayHour ))
 echo "Daily Employee Wage: $totalSalary"
