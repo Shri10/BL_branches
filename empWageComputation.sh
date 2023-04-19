@@ -30,8 +30,8 @@ fi
 
 echo "Total Salary: $totalSalary"
 
-#UC3
-echo "UC3"
+#UC3 + UC4
+echo "UC3+UC4"
 
 isFullTime=1
 isPartTime=2
@@ -52,3 +52,17 @@ echo "Salary: " $salary
 #UC4
 echo "UC4"
 
+case $randomCheck in
+    $isFullTime)
+        empHrs=8
+        ;;
+    $isPartTime)
+        empHrs=4
+        ;;
+    *)
+        empHrs=0
+        ;;
+esac
+
+salary=$(($empHrs*$empHourRate))
+echo "Salary: " $salary
